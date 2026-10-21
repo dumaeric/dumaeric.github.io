@@ -1,2 +1,2 @@
-# dumaeric.github.io
-PUBPOL 222 Final Project
+# Surveillance 
+PUBPOL222 Final Project - Eric Duma and Tuong Tran
