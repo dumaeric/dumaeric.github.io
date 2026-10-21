@@ -77,6 +77,41 @@ body {
   margin: 16px 0;
 }
 
+.hero-content {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: center;
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  min-width: 0;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Stack the image below the text on small screens */
+@media (max-width: 700px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .hero-image img {
+    max-height: 300px;
+    aspect-ratio: 16 / 9;
+  }
+}
+
 .intro {
   color: #d4dce5;
   max-width: 620px;
